@@ -22,7 +22,7 @@ background-color: #000;
 }
 .hero h1{
     font-family: "sacramento", cursive;
-    font-size: 8rem;
+    font-size: 5rem;
     text-shadow: white;
     animation: rainbow-text 1s infinite linear;
 }
