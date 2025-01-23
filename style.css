@@ -94,3 +94,23 @@ audio::-webkit-media-controls-current-time-display {
 audio::-webkit-media-controls-time-remaining-display {
     display: none;
 }
+
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    font-size: 15px;
+  }
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+}
