@@ -1,0 +1,96 @@
+:root {
+--pink:#f14e95;
+--blue:#2f4f7f;
+--bg:#0a0a0a;
+--shadow : 0 2px 2px rgba(255, 252, 252, 0.5);
+}
+
+
+
+body {
+font-size: 1.2rem;
+font-family:'Work Sans', sans-serif;
+text-shadow: white;
+background-color: #000;
+}
+
+
+
+.hero{
+    min-height: 100vh;
+    background-color: #0a0a0a;
+}
+.hero h1{
+    font-family: "sacramento", cursive;
+    font-size: 8rem;
+    text-shadow: white;
+    animation: rainbow-text 1s infinite linear;
+}
+@keyframes rainbow-text {
+  0% { color: rgb(113, 2, 2); }
+  14% { color: rgb(164, 108, 4); }
+  28% { color: rgb(150, 150, 12); }
+  42% { color: green; }
+  57% { color: rgb(32, 32, 149); }
+  71% { color: indigo; }
+  85% { color: rgb(106, 56, 106); }
+  100% { color: rgb(97, 6, 6); }
+}
+
+.home{
+    background-color: #0a0a0a;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+.home .gambar{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.round-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 70%;
+    object-fit: cover;
+    border: 5px solid #000;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 0.5;
+    }
+  }
+
+  .image-grid {
+    animation: appear linear;
+    animation-timeline: view();
+  }
+
+  audio::-webkit-media-controls {
+    display: none;
+}
+audio::-webkit-media-controls-panel {
+    display: none;
+}
+audio::-webkit-media-controls-play-button {
+    display: none;
+}
+audio::-webkit-media-controls-volume-slider {
+    display: none;
+}
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
